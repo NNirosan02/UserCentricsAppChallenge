@@ -11,7 +11,7 @@ class ServiceCostUtilTest {
     @Test
     fun theGoodCitizen() {
         val theGoodCitizen =
-            ServiceCostUtil().theGoodCitizen(UserCentricsServiceMock.usercentricsServiceMock)
+            ServiceCostUtil().theGoodCitizen(UserCentricsServiceMock.userCentricsServiceMock)
         assertEquals(true, theGoodCitizen)
     }
 }
