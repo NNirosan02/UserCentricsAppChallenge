@@ -10,7 +10,8 @@ import org.junit.Test
 class ServiceCostUtilTest {
     @Test
     fun theGoodCitizen() {
-        val theGoodCitizen = ServiceCostUtil().theGoodCitizen(UserCentricsServiceMock.usercentricsServiceMock)
-        assertEquals(true, theGoodCitizen )
+        val theGoodCitizen =
+            ServiceCostUtil().theGoodCitizen(UserCentricsServiceMock.usercentricsServiceMock)
+        assertEquals(true, theGoodCitizen)
     }
 }

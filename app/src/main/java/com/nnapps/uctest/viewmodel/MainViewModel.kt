@@ -42,13 +42,12 @@ class MainViewModel : ViewModel() {
                         }
 
                         // Apply Rule 1 if applicable (Banking snoopy = Increase by 10%)
-                        if(ServiceCostUtil().bankingSnoopy(it)) {
+                        if (ServiceCostUtil().bankingSnoopy(it)) {
                             cost += (10.toFloat() * cost) / 100
                         }
 
                         // Apply Rule 2 if applicable (Why do you care = Increase by 27%)
-                        if (ServiceCostUtil().whyDoYouCare(it))
-                        {
+                        if (ServiceCostUtil().whyDoYouCare(it)) {
                             cost += (27.toFloat() * cost) / 100
                         }
 
