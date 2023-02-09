@@ -43,21 +43,18 @@ class MainViewModel : ViewModel() {
 
                         // Apply Rule 1 if applicable (Banking snoopy = Increase by 10%)
                         if(ServiceCostUtil().bankingSnoopy(it)) {
-                            val bankingSnoopyIncrease = (10.toFloat() * cost) / 100
-                            cost += bankingSnoopyIncrease
+                            cost += (10.toFloat() * cost) / 100
                         }
 
                         // Apply Rule 2 if applicable (Why do you care = Increase by 27%)
                         if (ServiceCostUtil().whyDoYouCare(it))
                         {
-                            val whyDoYouCareIncrease = (27.toFloat() * cost) / 100
-                            cost += whyDoYouCareIncrease
+                            cost += (27.toFloat() * cost) / 100
                         }
 
                         // Apply Rule 3 if applicable (The good citizen = Decrease by 10%)
                         if (cost > 0 && ServiceCostUtil().theGoodCitizen(it)) {
-                            val theGoodCitizenDiscount =  (10.toFloat() * cost) / 100
-                            cost -= theGoodCitizenDiscount
+                            cost -= (10.toFloat() * cost) / 100
                         }
 
                         println("${consentItem.name} = $cost")
