@@ -43,7 +43,6 @@ class MainViewModel : ViewModel() {
 
                         // Apply Rule 1 if applicable (Banking snoopy = Increase by 10%)
                         if(ServiceCostUtil().bankingSnoopy(it)) {
-                            println(it)
                             val bankingSnoopyIncrease = (10.toFloat() * cost) / 100
                             cost += bankingSnoopyIncrease
                         }
@@ -51,7 +50,6 @@ class MainViewModel : ViewModel() {
                         // Apply Rule 2 if applicable (Why do you care = Increase by 27%)
                         if (ServiceCostUtil().whyDoYouCare(it))
                         {
-                            println(it)
                             val whyDoYouCareIncrease = (27.toFloat() * cost) / 100
                             cost += whyDoYouCareIncrease
                         }
