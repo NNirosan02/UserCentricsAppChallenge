@@ -39,6 +39,7 @@
             android:backgroundTint="@color/btnPrimary"
             android:padding="15dp"
             android:text="@string/show_consent_banner"
+            android:enabled="false"
             app:layout_constraintBottom_toBottomOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
