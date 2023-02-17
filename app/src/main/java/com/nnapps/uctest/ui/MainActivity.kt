@@ -25,7 +25,6 @@ class MainActivity : AppCompatActivity() {
 
         Usercentrics.isReady(onSuccess = {
             binding.showConsentBannerBtn.isEnabled = true
-
         }, onFailure = {
             it.printStackTrace()
         })

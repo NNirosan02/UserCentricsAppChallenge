@@ -11,10 +11,10 @@ class ServiceCostUtil {
     }
 
     fun whyDoYouCare(usercentricsServiceData: UsercentricsService): Boolean {
-    return (usercentricsServiceData.dataCollectedList.contains(DataCostModel.SEARCH_TERMS.collectedData) && usercentricsServiceData.dataCollectedList.contains(
-                DataCostModel.GEOGRAPHIC_LOCATION.collectedData
-            ) && usercentricsServiceData.dataCollectedList.contains(DataCostModel.NUMBER_OF_PAGE_VIEWS.collectedData)
-        )
+        return (usercentricsServiceData.dataCollectedList.contains(DataCostModel.SEARCH_TERMS.collectedData) && usercentricsServiceData.dataCollectedList.contains(
+            DataCostModel.GEOGRAPHIC_LOCATION.collectedData
+        ) && usercentricsServiceData.dataCollectedList.contains(DataCostModel.NUMBER_OF_PAGE_VIEWS.collectedData)
+                )
     }
 
     fun theGoodCitizen(usercentricsServiceData: UsercentricsService): Boolean {
