@@ -23,12 +23,9 @@ class MainActivity : AppCompatActivity() {
         viewModel = ViewModelProvider(this)[MainViewModel::class.java]
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 
-        Usercentrics.isReady(onSuccess = { status ->
+        Usercentrics.isReady(onSuccess = {
             binding.showConsentBannerBtn.isEnabled = true
-//            if (status.shouldCollectConsent) {
-//            } else {
-//                applyConsent(status.consents)
-//            }
+
         }, onFailure = {
             it.printStackTrace()
         })
